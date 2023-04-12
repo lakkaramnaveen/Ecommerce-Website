@@ -1,0 +1,128 @@
+<!-- <form class="row g-3 needs-validation" (submit)="addNewProduct(addProduct)" novalidate #addProduct="ngForm">
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Enter Product Name" required name="product_name" ngModel>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required name="product_category" ngModel>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form> -->
+
+  <h2 class="bg-light mb-2">Add New Product</h2>
+<form (submit)="addNewProduct(addProductFrom)" #addProductFrom="ngForm">
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Product Name</label>
+        <input type="text" class="form-control" name="product_name" value="Enter Product Name" ngModel required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">Category Id</label>
+        <input type="text" class="form-control" name="product_category" required ngModel>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Description</label>
+        <textarea type="text" class="form-control" placeholder="Enter Product Description" name="product_description" required ngModel></textarea>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Rating</label>
+        <select class="custom-select" name="product_rating" ngModel required>
+          <option selected value="">Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Product Color</label>
+        <input type="text" class="form-control" name="product_color" required ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>is Available</label>
+        <select class="custom-select" name="product_isAvailable" ngModel required>
+          <option selected value="">Choose...</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Product Price</label>
+        <input type="text" class="form-control" name="product_price" required ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Reviews</label>
+        <select class="custom-select" name="product_reviews" ngModel required>
+          <option selected value="">Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>&nbsp;&nbsp;
+    <!-- <button class="btn btn-secondary" type="submit" href="/products">Go back</button> -->
+  </form>

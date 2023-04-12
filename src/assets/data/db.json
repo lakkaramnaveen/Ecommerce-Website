@@ -1,0 +1,129 @@
+{
+  "signup": [
+    {
+      "fullname": "Naveen Kumar",
+      "mobile": 1212121212121,
+      "email": "adad@1212.com",
+      "password": "Nani1212",
+      "isAdmin": true,
+      "id": 1
+    },
+    {
+      "fullname": "Naveen Kumar",
+      "mobile": 12121222223,
+      "email": "123@gmail.com",
+      "password": "12345678",
+      "isAdmin": false,
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "categoryId": 3,
+      "productName": "Polo Casual Tshirt",
+      "description": "It's a good product with high rating, with 100% genuine cotton",
+      "rating": "",
+      "price": "500",
+      "productImg": "",
+      "color": "red",
+      "reviews": ""
+    },
+    {
+      "id": 6,
+      "categoryId": 3,
+      "productName": "Party Shirt",
+      "description": "Excellent choice for party with 100% cotton",
+      "rating": 4,
+      "productImg": "http://localhost:4200/assets/images/as2.jpg",
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "productName": "Yellow Soccer Tshirt",
+      "description": "Good Tshirt with a great brand value",
+      "rating": 5,
+      "productImg": "http://localhost:4200/assets/images/st1.jpg",
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "productName": "Emirates Soccer Tshirt",
+      "description": "Special Messi Sports edition",
+      "rating": 4.1,
+      "productImg": "http://localhost:4200/assets/images/st2.jpg",
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "productName": "Inglec Soccer Tshirt",
+      "description": "Soccer fans must try",
+      "rating": 3.8,
+      "productImg": "http://localhost:4200/assets/images/st3.jpg",
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "productName": "Red Soccer Tshirt",
+      "description": "Nylon Tshirt with great comfort",
+      "rating": 4.2,
+      "productImg": "http://localhost:4200/assets/images/st4.jpg",
+      "price": 400,
+      "isAvailable": true,
+      "color": "red",
+      "reviews": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Jockey Tshirts"
+    },
+    {
+      "id": 2,
+      "categoryName": "Sports Wear"
+    },
+    {
+      "id": 3,
+      "categoryName": "Shirts"
+    },
+    {
+      "id": 4,
+      "categoryName": "Inners"
+    },
+    {
+      "id": 5,
+      "categoryName": "Jackets"
+    },
+    {
+      "id": 6,
+      "categoryName": "Shoes"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
